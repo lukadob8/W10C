@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    #return {
+        display: none;
+    }
+
+    #battle {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+
+        #player {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            #trainer {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+    
+        #computer {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+
+    
+}

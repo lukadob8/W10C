@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle</title>
+    <link rel="stylesheet" href="css/battle.css">
+</head>
+<body>
+    <h1>Battle Start!</h1>
+    <br><br><br><br>
+
+    <div id="battle">
+        <div id="player">
+            <div id="trainer"></div>
+            <div id="trainerHp"></div>
+            <p id="firstAttack" onclick="attack()">Attack One</p>
+    
+        </div>
+        
+        
+        <div id="computer">
+            <img width="150px" src="images/Ray.png" alt="Rayquaza">
+            <p>Rayquaza</p>
+            <div id="cpHp"></div>
+            
+        
+        </div>
+
+    </div>
+
+    <div id="result"></div>
+
+    <br><br><br>
+
+    <div onclick="restart()" id="return">Play Again</div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/battle.js"></script>
+</body>
+</html>

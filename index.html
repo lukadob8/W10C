@@ -1,1 +1,42 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Choose your Pokemon!</h1>
+    <br><br><br>
+
+    <div id="starters">
+
+        <div id="fire" class="pokemon" onclick="choice('torchic')">
+            <img height="175px" src="images/torchic.jpg" alt="A picture of Torchic.">
+            <br>
+            <p>Torchic</p>
+    
+        </div>
+    
+        <div id="grass" class="pokemon" onclick="choice('treecko')">
+            <img width="150px" src="images/treecko.jpg" alt="A picture of Treecko.">
+            <br>
+            <p>Treecko</p>
+    
+        </div>
+    
+        <div id="water" class="pokemon" onclick="choice('mudkip')">
+            <img width="150px" src="images/mudkip.png" alt="A picture of Mudkip.">
+            <br>
+            <p>Mudkip</p>
+    
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

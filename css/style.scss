@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    #starters {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+
+        .pokemon {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    }
+}
