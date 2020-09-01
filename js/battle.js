@@ -75,6 +75,29 @@ function attackTwo() {
     // }
 }
 
+function attackThree() {
+    var newCPHP = computerHP.innerHTML - Math.floor((Math.random()*15)+ 1);
+    computerHP.innerHTML = newCPHP;
+    gameOver();
+
+    var newTrainerHP = trainerHP.innerHTML - Math.floor((Math.random()*15)+ 1);
+    trainerHP.innerHTML = newTrainerHP;
+    gameUpdate(newCPHP, newTrainerHP);
+    gameOver();
+}
+
+function attackFour() {
+    var newCPHP = computerHP.innerHTML - 20 + (Math.floor(Math.random()*15)+ 1);
+    computerHP.innerHTML = newCPHP;
+    gameOver();
+
+    var newTrainerHP = trainerHP.innerHTML - 12;
+    trainerHP.innerHTML = newTrainerHP;
+    gameUpdate(newCPHP, newTrainerHP);
+    gameOver();
+    
+}
+
 function restart() {
     Cookies.remove('player');
     window.open('index.html', '_self');
