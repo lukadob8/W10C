@@ -6,15 +6,16 @@
     <title>Battle</title>
     <link rel="stylesheet" href="css/battle.css">
 </head>
-<body>
-    <h1>Battle Start!</h1>
+<body id="body">
+    <h1 id="title">Battle Start!</h1>
     <br><br><br><br>
 
     <div id="battle">
         <div id="player">
             <div id="trainer"></div>
             <div id="trainerHp"></div>
-            <p id="firstAttack" onclick="attack()">Attack One</p>
+            <p class="moves" id="firstAttack" onclick="attack()">Attack One</p>
+            <p class="moves" id="secondAttack" onclick="attackTwo()">Attack Two</p>
     
         </div>
         
